@@ -16,6 +16,9 @@ String str = "A011";
 String result = str.replaceAll("[^A-Z]", "");
 ```
 
+StringBuilder().reverse().toString()
+- reverse 한 뒤 String 타입으로 변환
+
 toCharArray()
 - char 형 배열로 변환
 
