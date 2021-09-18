@@ -12,7 +12,7 @@ public class BaseCode {
 
     public static void main(String[] args) {
         // g0en2T0s8eSoft => 208
-        Scanner in=new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         String input = in.nextLine();
 
         System.out.println(solve(input));
