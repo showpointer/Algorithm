@@ -55,7 +55,57 @@ class Conversion {
 }
 ```
 
-
 ### 정렬
+```java
+class Sorting {
+
+    public static void main(String[] args) {
+        // int 배열 정렬 (오름차순, 내림차순)
+        int[] arr = {1, 26, 17, 25, 99, 44, 303};
+        
+        // 오름차순
+        Arrays.sort(arr);
+        System.out.println("Sorted arr[] : " + Arrays.toString(arr));
+
+        // 내림차순
+        Arrays.sort(arr,  Collections.reverseOrder());
+        System.out.println("Sorted arr[] : " + Arrays.toString(arr));
+
+        // 내림차순: Comparator 구현 => Integer 사용해야 함
+        Integer[] arr = {1, 26, 17, 25, 99, 44, 303};
+        Arrays.sort(arr, (i1, i2) -> i2 - i1);
+        System.out.println("Sorted arr[] : " + Arrays.toString(arr));
+        
+        // 0~4 index 부분 정렬
+        Arrays.sort(arr, 0, 4);
+        System.out.println("Sorted arr[] : " + Arrays.toString(arr));
+        
+        // 문자열 길이순 정렬
+        String[] arr = {"Apple", "Kiwi", "Orange", "Banana", "Watermelon", "Cherry"};
+        Arrays.sort(arr, (s1, s2) -> s1.length() - s2.length());
+        System.out.println("Sorted arr[] : " + Arrays.toString(arr));
+    }
+}
+```
+
 
 ### Collection
+```java
+class CollectionConversion {
+
+    public static void main(String[] args) {
+        // int -> List<Integer> 형변환
+        // 1. for문 사용
+        int[] arr = {1, 2, 3};
+        List<Integer> intList = new ArrayList<>();
+        for (int element : arr) {
+            intList.add(element);
+        }
+
+        // 2. Stream 사용
+        List<Integer> intList = Arrays.stream(arr)
+                .boxed()
+                .collect(Collectors.toList());
+    }
+}
+```
