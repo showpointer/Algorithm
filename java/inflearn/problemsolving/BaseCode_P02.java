@@ -3,6 +3,7 @@ package inflearn.problemsolving;
 import java.util.Scanner;
 
 public class BaseCode_P02 {
+
     public static int solve(int n, int[] arr) {
         int answer = 0;
 

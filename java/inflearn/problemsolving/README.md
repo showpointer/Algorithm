@@ -1,6 +1,6 @@
 ### 문제 유형
 1. String(문자열) - 12/12문제
-2. Array(1, 2차원 배열) - 6/12문제
+2. Array(1, 2차원 배열) - 12/12문제
 3. Two pointers, Sliding window[효율성 : O(n^2)-->O(n)] - 6문제
 4. HashMap, TreeSet (해쉬, 정렬지원 Set) - 5문제
 5. Stack, Queue(자료구조) - 8문제
