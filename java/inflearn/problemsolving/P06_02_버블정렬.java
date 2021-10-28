@@ -9,8 +9,8 @@ public class P06_02_버블정렬 {
         2. 가장 큰 수가 오른쪽 끝으로 가게 됨
         3. 1의 과정을 다시 진행하여 모든 숫자가 정렬될 때 까지 반복
          */
-        for (int i = n; i > 0; i--) {
-            for (int j = 0; j < i-1; j++) {
+        for (int i = 0; i < n-1; i++) {
+            for (int j = 0; j < n-i-1; j++) {
                 if (arr[j] > arr[j+1]) {
                     int tmp = arr[j+1];
                     arr[j+1] = arr[j];
